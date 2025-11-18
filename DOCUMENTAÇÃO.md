@@ -199,28 +199,6 @@ considerar as diferenças entre modelagens relacionais e NoSQL,
 garantindo que a estrutura suporte múltiplos usuários colaborando ao
 mesmo tempo sem perda de desempenho.
 
-**4. Mockups**
-
-**Tela 1 -- Login**
-
-![](media/image3.png){width="5.914666447944007in"
-height="3.6856681977252843in"}
-
-**Tela 2 -- Mural**
-
-![](media/image4.png){width="5.969939851268592in"
-height="3.7186493875765527in"}
-
-**Tela 3 -- Tarefas**
-
-![](media/image2.png){width="6.032306430446194in"
-height="3.7595713035870517in"}
-
-**Tela 4 -- Perfil**
-
-![](media/image1.png){width="6.063689851268592in"
-height="3.7845056867891516in"}
-
 **5. Cronograma (Gantt)**
 
   ------------------------------------------------------------------------
@@ -240,3 +218,94 @@ height="3.7845056867891516in"}
 
   6              Repositório GitHub    10/11      11/11     2 dias
   ------------------------------------------------------------------------
+
+
+| Cartão               | Descrição            | Critérios              |
+| ---                  | ---                  |                     --- |
+| Criar conta          | Como visitante,      | Cadastro usa nome,     |
+|                      | quero criar uma      | e-mail e senha         |
+|                      | conta para acessar a |                        |
+|                      | plataforma e         | O e-mail deve ser      |
+|                      | participar de        | único no sistema;      |
+|                      | projetos.            |                        |
+|                      |                      | A senha deve atender   |
+|                      |                      | aos critérios mínimos  |
+|                      |                      | definidos.             |
+
+| Autenticação de      | Como usuário         | E-mail e senha devem   |
+| usuário              | registrado quero     | ser validados          |
+|                      | fazer login com      |                        |
+|                      | e-mail e senha para  |                        |
+|                      | acessar meus         |                        |
+|                      | projetos e tarefas.  |                        |
++----------------------+----------------------+------------------------+
+| Criar projeto        | Como usuário, quero  | Nome é obrigatório;    |
+|                      | criar projetos para  |                        |
+|                      | organizar tarefas do | A descrição é          |
+|                      | meu grupo            | opcional.              |
++----------------------+----------------------+------------------------+
+| Excluir projeto      | Como criador do      | Exibir aviso de        |
+|                      | projeto, quero poder | confirmação;           |
+|                      | excluir para remover |                        |
+|                      | informações não mais | Tarefas do projeto     |
+|                      | úteis                | devem ser excluidas.   |
++----------------------+----------------------+------------------------+
+| Criar tarefas        | Como membro do       | Deve conter título,    |
+|                      | projeto, quero criar | descrição, responsável |
+|                      | tarefas para         | (opcional), status e   |
+|                      | organizar e          | data de criação;       |
+|                      | registrar            |                        |
+|                      | atividades.          | Status inicial = A     |
+|                      |                      | Fazer.                 |
++----------------------+----------------------+------------------------+
+| Atribuir tarefa a    | Como usuário, quero  | A alteração deve gerar |
+| membro               | atribuir uma tarefa  | notificação;           |
+|                      | a um membro para     |                        |
+|                      | distribuir           | Apenas o dono do       |
+|                      | responsabilidades    | projeto pode atribuir  |
+|                      | dentro da equipe.    | tarefas.               |
++----------------------+----------------------+------------------------+
+| Editar e excluir     | Como usuário, quero  | Apenas usuários        |
+| tarefas              | editar ou excluir    | autorizados podem      |
+|                      | tarefas para         | editar/excluir;        |
+|                      | mantê-las            |                        |
+|                      | atualizadas ou       | Exclusão deve pedir    |
+|                      | remover tarefas não  | confirmação;           |
+|                      | úteis.               |                        |
+|                      |                      | Alterações devem ser   |
+|                      |                      | notificadas.           |
++----------------------+----------------------+------------------------+
+| Alterar status da    | Como membro do       | Mudanças de status     |
+| tarefa               | projeto, quero       | registradas no         |
+|                      | alterar o status das | histórico;             |
+|                      | tarefas para indicar |                        |
+|                      | seu andamento        | Deve gerar             |
+|                      |                      | notificação;           |
++----------------------+----------------------+------------------------+
+| Criar comentarios em | Como membro do       | Comentários devem      |
+| tarefas              | projeto, quero       | exibir autor e data;   |
+|                      | comentar em tarefas  |                        |
+|                      | para compartilhar    |                        |
+|                      | informações.         |                        |
++----------------------+----------------------+------------------------+
+| Notificações         | Como usuário, quero  | Eventos que devem      |
+|                      | receber notificações | gerar notificação:     |
+|                      | sobre eventos para   |                        |
+|                      | acompanhar mudanças  | Atribuição de tarefas; |
+|                      | no projeto.          |                        |
+|                      |                      | Mudança de status;     |
+|                      |                      |                        |
+|                      |                      | Novos comentários;     |
+|                      |                      |                        |
+|                      |                      | Nova tarefa criada.    |
++----------------------+----------------------+------------------------+
+| Histórico de         | Como usuário, quero  | Histórico deve         |
+| Alterações           | ter acesso ao        | registrar:             |
+|                      | histórico de de uma  |                        |
+|                      | tarefa para entender | Mudanças de status;    |
+|                      | o que mudou, quando  |                        |
+|                      | e quem fez.          | Mudança de             |
+|                      |                      | responsável;           |
+|                      |                      |                        |
+|                      |                      | Edição de tarefas.     |
++----------------------+----------------------+------------------------+
